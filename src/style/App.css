@@ -1,0 +1,10 @@
+@import url('General.css');
+
+.App {
+    width: 70%;
+    height: 90%;
+}
+
+.PageTitle {
+    color: var(--accent-color-light);
+}

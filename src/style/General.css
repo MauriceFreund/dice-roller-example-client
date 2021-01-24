@@ -1,0 +1,43 @@
+:root {
+    --main-color: #053C5E;
+    --main-color-light: #01A7C2;
+    --accent-color: #DB222A;
+    --accent-color-light: #ED254E;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainColor {
+    background-color: var(--main-color);
+}
+
+.MainColorLight {
+    background-color: var(--main-color-light);
+}
+
+.AccentColor {
+    background-color: var(--accent-color);
+}
+
+.AccentColorLight {
+    background-color: var(--accent-color-light);
+}
+
+.Button {
+    border-style: none;
+    color: white;
+    border-radius: 2px;
+    height: 2em;
+    margin: 0.5em 5px;
+}

@@ -1,0 +1,33 @@
+.DiceUserInterface {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2.5em 1.5em 2.5em 1.5em;
+    grid-template-areas: 
+        "UpperButton"
+        "DiceAmount"
+        "LowerButton"
+        "DiceValue";
+}
+
+.DiceUserInterface > .Button {
+    width: 6em;
+}
+
+
+.DiceValue {
+    grid-area: DiceValue;
+    text-align: center;
+}
+
+.DiceAmount {
+    grid-area: DiceAmount;
+    text-align: center;
+}
+
+.UpperButton {
+    grid-area: UpperButton;
+}
+
+.LowerButton {
+    grid-area: LowerButton;
+}

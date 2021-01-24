@@ -1,0 +1,26 @@
+.AddDiceInput {
+    width: 100%;
+    height: 4em;
+    margin: 1em 0em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "input input"
+        "left-btn right-btn";
+}
+
+.Input {
+    grid-area: input;
+    border:none;
+    border-bottom:1px solid #757575;
+    text-align: end;
+}
+
+.AddDice {
+    grid-area: left-btn;
+}
+
+.AddConstant {
+    grid-area: right-btn;
+}

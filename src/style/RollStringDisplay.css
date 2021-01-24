@@ -1,0 +1,19 @@
+.RollStringDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RollStringDisplay > .Button {
+    width: 8em;
+}
+
+.RollResult {
+    text-align: center;
+}
+
+.RollResultLabel {
+    width: 4em;
+    border-top: solid 1px;
+    text-align: center;
+}
