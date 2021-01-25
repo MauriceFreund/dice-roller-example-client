@@ -13,8 +13,13 @@ class DiceBoard extends React.Component {
         super(props);
         this.props = props;
         this.state = {
-            nextDiceId: 0,
-            activeDice: []
+            nextDiceId: 1,
+            activeDice: [{
+                id: 0,
+                value: 6,
+                amount: 1,
+                isConstant: false
+            }]
         };
         this.addDice = this.addDice.bind(this);
         this.setDiceAmount = this.setDiceAmount.bind(this);

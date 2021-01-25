@@ -3,6 +3,9 @@
     --main-color-light: #01A7C2;
     --accent-color: #DB222A;
     --accent-color-light: #ED254E;
+    --accept-color: #69DC9E;
+    --decline-color: #ED254E;
+    --deactivated-color: #373F47;
 }
 
 html, body {
@@ -34,10 +37,19 @@ html, body {
     background-color: var(--accent-color-light);
 }
 
+.AcceptColor {
+    background-color: var(--accept-color);
+}
+
+.DeclineColor {
+    background-color: var(--decline-color);
+}
+
 .Button {
     border-style: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.93);
     border-radius: 2px;
     height: 2em;
     margin: 0.5em 5px;
 }
+

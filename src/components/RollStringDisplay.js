@@ -30,17 +30,16 @@ class RollStringDisplay extends React.Component {
     }
 
     getRollResultElement() {
-        const rollResultElement = (
+        return (
             <div className="RollResultElement">
-                <p className="RollResult">{this.state.rollResult}</p>
+                <p className="RollResult">{this.state.rollResult ? this.state.rollResult : 'Press "Roll" to get a result.'}</p>
                 <p className="RollResultLabel">Result</p>
             </div>
         )
-        return this.state.rollResult ? rollResultElement : null;
     }
 
     fetchRollResult() {
-        fetch('http://localhost:8080/rolldice?roll=' + this.convertRollStringForUrl())
+        fetch('http://diceapi.mauricefreund.com/rolldice?roll=' + this.convertRollStringForUrl())
             .then(response => response.text())
             .then(response => this.setState({rollResult: response}));
     }
@@ -49,7 +48,7 @@ class RollStringDisplay extends React.Component {
         return (
             <div className="RollStringDisplay">
                 {this.generateRollString()}
-                <button className="Button MainColorLight" onClick={this.fetchRollResult}>Roll</button>
+                <button className="Button AcceptColor" onClick={this.fetchRollResult}>Roll</button>
                 {this.getRollResultElement()}
             </div>
         );

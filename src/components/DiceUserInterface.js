@@ -21,16 +21,16 @@ class DiceUserInterface extends React.Component {
 
     getUpperButton() {
         return !this.props.dice.isConstant ? (
-            <button className="UpperButton Button MainColorLight" onClick={this.increaseAmount}>
-                Increase
+            <button className="UpperButton Button AcceptColor" onClick={this.increaseAmount}>
+                <b>+</b>
             </button>
         ) : null;
     }
 
     getLowerButton() {
         return this.props.dice.amount > 1 && !this.props.dice.isConstant ? (
-            <button className="LowerButton Button MainColorLight" onClick={this.decreaseAmount}>
-                Decrease
+            <button className="LowerButton Button DeclineColor" onClick={this.decreaseAmount}>
+                <b>-</b>
             </button>
         ) : (
             <button className="LowerButton Button AccentColorLight" onClick={() => this.props.deleteDiceCallback(this.props.dice.id)}>
